@@ -116,7 +116,7 @@ def show_frames():
    # Get the latest frame and convert into Image
    ret, frame = video.read()
    frame1 = cv.cvtColor(frame,cv.COLOR_BGR2RGB)
-   hsv_frame = cv.cvtColor(frame1, cv.COLOR_BGR2HSV)
+   hsv_frame = cv.cvtColor(frame1, cv.COLOR_BGR2HSVFULL)
    l_h = int(scale1.get())
    l_s = int(scale2.get())
    l_v = int(scale3.get())
